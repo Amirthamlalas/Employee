@@ -90,6 +90,22 @@ class employ{
                         }
                     }
                     break;
+                case 4 :
+                    System.out.println("Enter the employee code");
+                    Scanner obj2 = new Scanner(System.in);
+                    int ecode2 = obj2.nextInt();
+                    for (employ e1 : emparr){
+                        if (ecode2 == e1.code){
+                            emparr.remove(e1);
+                        }
+                    }
+                    break;
+                case 5:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("invalid input");
+                    break;
 
 
             }
