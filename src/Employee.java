@@ -56,6 +56,20 @@ class employ{
                 emparr.add(e);
                 break;
 
+                case 2 :
+
+                    for (employ em : emparr) {
+                        System.out.println("Printing details of employee " );
+                        System.out.println(em.code);
+                        System.out.println(em.name);
+                        System.out.println(em.designation);
+                        System.out.println(em.salary);
+                        System.out.println(em.companyName);
+                        System.out.println(em.phnNo);
+                        System.out.println(em.emailId);
+                    }
+                    break;
+
             }
 
         }
