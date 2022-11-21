@@ -20,12 +20,13 @@ class employ{
         this.phnNo = phnNo;
         this.emailId = emailId;
     }
-}
 
 
-public class Employee {
+
+
+
     public static void main(String[] args) {
-        ArrayList<Employee> emparr = new ArrayList<Employee>();
+        ArrayList<employ> emparr = new ArrayList<employ>();
         while (true) {
             System.out.println("Select an option \n 1 - Add Employee \n 2 - View Employee \n 3 - Search an Employee \n" +
                     "4 - Delete an Employee \n 5 - Exit");
@@ -34,6 +35,26 @@ public class Employee {
 
 
             switch (n) {
+                case 1:
+                System.out.println("Enter employee details");
+
+                System.out.println("enter the code");
+                int code = input.nextInt();
+                System.out.println("Enter name");
+                String name = input.next();
+                System.out.println("Give the designation");
+                String designation = input.next();
+                System.out.println("Enter the salary");
+                double salary = input.nextDouble();
+                System.out.println("Enter company name");
+                String companyName = input.next();
+                System.out.println("Enter phn No");
+                long phnNo= input.nextLong();
+                System.out.println("Enter email Id");
+                String emailId = input.next();
+                employ e = new employ(code, name, designation, salary, companyName, phnNo, emailId);
+                emparr.add(e);
+                break;
 
             }
 
